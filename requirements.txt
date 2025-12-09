@@ -16,6 +16,8 @@ termynal
 rich[jupyter]
 ydata-profiling
 ipywidgets
+dask
+
 
 mkdocs-material
 mkdocs-material-extensions

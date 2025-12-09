@@ -1,100 +1,33 @@
-# Template de Entrega
+# Olá, eu sou o André.
 
+Bem-vindo ao meu portfólio técnico, criei este espaço com a intenção de centralizar e documentar meus projetos. A ideia é compartilhar o que estou estudando e construindo.
 
-???+ info inline end "Edição"
+Sou formado em **Desenvolvimento de Sistemas** e estou cursando **Ciência de Dados e Negócios**. E por isso, este será um espaço com os mais diversos estudos e experimentos relacionados a tecnologia, dados, sistemas, estatística e matemática.
 
-    2025.1
+<br>
 
+## Explorar
+<div align="center" markdown>
 
-## Grupo/Kit X
+[Ir para a área de Machine Learning](ml/index.md){ .md-button .md-button--primary .md-button--large }
 
-1. João da Silva
-1. Pedro de Souza
-1. Maria Oliveira
-1. Grupo K
-    - João da Silva
-    - Pedro de Souza
+</div>
+!!! warning "Aviso"
+    **O portfólio acabou de nascer.** Estou trazendo meus projetos e anotações para cá aos poucos, então você verá poucas páginas por enquanto.
 
+<br>
 
+---
+## Contato
+<div class="grid cards" markdown>
 
-!!! tip "Instruções"
+- :fontawesome-brands-linkedin: **LinkedIn**
+    - [linkedin.com/in/andre-alves777](https://linkedin.com/in/andre-alves777)
+- :fontawesome-brands-github: **GitHub**
+    - [github.com/andre-alves77](https://github.com/andre-alves77)
+- :fontawesome-solid-envelope: **Email**
+    - [andre.alves68@outlook.com](mailto:andre.alves68@outlook.com)
+- :fontawesome-solid-phone: **Telefone/Whatsapp**
+    - [+55 (11) 91429-1819](tel:5511914291819)
 
-    Vocês devem utilizar este template como um bloco de notas para registrar o que foi feito e o que falta fazer. Vocês devem adicionar as informações necessárias.
-    O template deve ser editado e atualizado a cada entrega, registrando assim a data de entrega e o que foi feito até o momento via Git.
-
-## Entregas
-
-- [x] Roteiro 1 - Data 23/02/2025
-- [ ] Roteiro 2
-- [ ] Roteiro 3
-- [ ] Roteiro 4
-- [ ] Projeto
-
-## Diagramas
-
-Use o [Mermaid](https://mermaid.js.org/intro/){:target='_blank'} para criar os diagramas de documentação.
-
-[Mermaid Live Editor](https://mermaid.live/){:target='_blank'}
-
-
-``` mermaid
-flowchart TD
-    Deployment:::orange -->|defines| ReplicaSet
-    ReplicaSet -->|manages| pod((Pod))
-    pod:::red -->|runs| Container
-    Deployment -->|scales| pod
-    Deployment -->|updates| pod
-
-    Service:::orange -->|exposes| pod
-
-    subgraph  
-        ConfigMap:::orange
-        Secret:::orange
-    end
-
-    ConfigMap --> Deployment
-    Secret --> Deployment
-    classDef red fill:#f55
-    classDef orange fill:#ffa500
-```
-
-
-
-## Códigos
-
-=== "De um arquivo remoto"
-
-    ``` { .yaml .copy .select linenums='1' title="main.yaml" }
-    --8<-- "https://raw.githubusercontent.com/hsandmann/documentation.template/refs/heads/main/.github/workflows/main.yaml"
-    ```
-
-=== "Anotações no código"
-
-    ``` { .yaml title="compose.yaml" }
-    name: app
-
-        db:
-            image: postgres:17
-            environment:
-                POSTGRES_DB: ${POSTGRES_DB:-projeto} # (1)!
-                POSTGRES_USER: ${POSTGRES_USER:-projeto}
-                POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-projeto}
-            ports:
-                - 5432:5432 #(2)!
-    ```
-
-    1.  Caso a variável de ambiente `POSTGRES_DB` não exista ou seja nula - não seja definida no arquivo `.env` - o valor padrão será `projeto`. Vide [documentação](https://docs.docker.com/reference/compose-file/interpolation/){target='_blank'}.
-
-    2. Aqui é feito um túnel da porta 5432 do container do banco de dados para a porta 5432 do host (no caso localhost). Em um ambiente de produção, essa porta não deve ser exposta, pois ninguém de fora do compose deveria acessar o banco de dados diretamente.
-
-
-## Exemplo de vídeo
-
-Lorem ipsum dolor sit amet
-
-<iframe width="100%" height="470" src="https://www.youtube.com/embed/3574AYQml8w" allowfullscreen></iframe>
-
-
-## Referências
-
-[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/){:target='_blank'}
+</div>

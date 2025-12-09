@@ -1,4 +1,4 @@
-site_name: Machine Learning Portifolio
+site_name: Machine Learning Portfolio
 site_author: Andre Alves
 site_url: https://andre-alves77.github.io/machine-learning
 repo_url: https://github.com/andre-alves77/machine-learning
@@ -7,36 +7,32 @@ repo_name: github/machine-learning
 theme:
   name: material
   palette:
-    # primary: grey
-    # Light mode
     - scheme: default
       primary: grey
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
 
-    # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       primary: grey
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
 
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default 
+      scheme: default
       primary: grey
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
 
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      primary: grey
       scheme: slate
+      primary: grey
       toggle:
         icon: material/toggle-switch
         name: Switch to system preference
+
   features:
     - content.code.copy
     - content.code.select
@@ -48,8 +44,8 @@ theme:
     - navigation.path
     - navigation.tracking
     - navigation.expand
+
   icon:
-    # logo: assets/images/devops
     admonition:
       note: fontawesome/solid/note-sticky
       abstract: fontawesome/solid/book
@@ -77,7 +73,7 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.snippets:
@@ -94,7 +90,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
-      custom_checkbox: true  
+      custom_checkbox: true
   - footnotes
   - pymdownx.critic
   - pymdownx.caret
@@ -103,7 +99,7 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.blocks.caption
   - tables
-      
+
 plugins:
   - glightbox
   - git-revision-date-localized:
@@ -118,38 +114,37 @@ plugins:
       minify_html: true
   - markdown-exec
   - render_swagger:
-      allow_arbitrary_locations : true
+      allow_arbitrary_locations: true
   - termynal:
       prompt_literal_start:
         - "$"
         - ">"
-
-# mkdocs-jupyter
   - mkdocs-jupyter:
+      remove_tag_config:
+        remove_cell_tags:
+            - "remove_cell"
+        remove_input_tags:
+            - "remove_input"
+            - "hide_code" # A documentação usa este
+        remove_output_tags:
+            - "remove_output"
+            
+      include_requirejs: true
       execute: false
       allow_errors: false
 
 extra_javascript:
-  - https://unpkg.com/mathjax/es5/tex-mml-chtml.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
   - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
-
-  # Para a implementação do mkdocs-jupyter
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
   - javascripts/mathjax.js
 
 nav:
   - Home: index.md
-  - Datasets: 
-    - ./datasets/1-credit_home.ipynb
-    - ./datasets/2-decision_tree.ipynb
-    - ./datasets/3-knn.ipynb
-  # - This documentation: ./thisdocumentation/index.md
-  # - Roteiros:
-  #   - Roteiro 1: ./roteiro1/index.md
-  #   - Roteiro 2: ./roteiro2/index.md
-  #   - Roteiro 3: ./roteiro3/index.md
-  #   - Roteiro 4: ./roteiro4/index.md
-  #   - Notebook 1: ./notebook1/ex1_data.ipynb
-  # - Projeto: ./projeto/index.md
+  - Machine Learning:
+    - ml/index.md
+    - ml/online-retail/1-eda/eda.ipynb
+    - ml/online-retail/2-tree/tree.ipynb
+    - ml/online-retail/3-knn/knn.py
