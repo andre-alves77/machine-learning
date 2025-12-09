@@ -147,4 +147,6 @@ nav:
     - ml/index.md
     - ml/online-retail/1-eda/eda.ipynb
     - ml/online-retail/2-tree/tree.ipynb
-    - ml/online-retail/3-knn/knn.py
+    - ml/online-retail/3-knn/knn.ipynb
+    - ml/online-retail/4-kmeans/kmeans.ipynb
+    - ml/online-retail/5-random/random.ipynb
