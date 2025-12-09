@@ -8,7 +8,7 @@ Inicialmente, utilizarei bibliotecas prontas para realizar a implementação dos
 
 ## Estudos Publicados
 
-### :fontawesome-solid-cart-shopping: [Análise de Varejo Online (Online Retail)](online-retail/1-eda/eda.ipynb)
+### :fontawesome-solid-cart-shopping: [Análise de Varejo Online (Online Retail)](online-retail/2-tree/tree.ipynb)
 Este é um estudo de caso clássico de dados transacionais do [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/dataset/502/online+retail+ii)
 
 <br>

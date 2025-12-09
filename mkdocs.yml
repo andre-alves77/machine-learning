@@ -145,7 +145,7 @@ nav:
   - Home: index.md
   - Machine Learning:
     - ml/index.md
-    - ml/online-retail/1-eda/eda.ipynb
+    # - ml/online-retail/1-eda/eda.ipynb
     - ml/online-retail/2-tree/tree.ipynb
     - ml/online-retail/3-knn/knn.ipynb
     - ml/online-retail/4-kmeans/kmeans.ipynb
